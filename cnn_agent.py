@@ -92,7 +92,7 @@ class CNNDeepQLearningAgent:
             return
 
         states, actions, rewards, next_states, dones = self.memory.sample()
-        
+
         # Reshape states and next_states
         states = states.view(states.size(0), -1, states.size(-2), states.size(-1))
         next_states = next_states.view(next_states.size(0), -1, next_states.size(-2), next_states.size(-1))

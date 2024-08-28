@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --account=shell
 #SBATCH --hint=compute_bound
-#SBATCH --cpus-per-task=16
+#SBATCH --cpus-per-task=32
 
 #SBATCH --gpus=1                        # total number of GPUs required by this job.
 #SBATCH --gpus-per-task=1               # number of GPUs required for each task.

@@ -50,7 +50,7 @@ def main_grid_search():
 
     # Fixed parameters
     learning_rate = 1e-4
-    nb_max_episodes = 1000
+    nb_max_episodes = 400
     initial_epsilon = 1.0
     final_epsilon = 0.01
     discount_factor = 0.99

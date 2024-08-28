@@ -95,7 +95,7 @@ def run_experiment(params):
 
 def main_grid_search():
     # Environments to test
-    environments = ["ALE/SpaceInvaders-v5", "ALE/Galaxian-v5"]
+    environments = ["ALE/Galaxian-v5", "ALE/SpaceInvaders-v5" ]
 
     # Fixed parameters
     learning_rate = 1e-4
@@ -103,7 +103,7 @@ def main_grid_search():
     final_epsilon = 0.1
     discount_factor = 0.99
     tau = 0.01
-    nb_max_episodes = 1000
+    nb_max_episodes = 400    
     test_freq = 50
     number_of_tests = 5
     output_size = 84
@@ -116,7 +116,7 @@ def main_grid_search():
     ]
     stack_sizes = [4,8]
     max_memories = [100000]
-    batch_sizes = [32, 64]
+    batch_sizes = [64]
     is_double_networks = [True, False]
 
     # Generate all combinations
