@@ -50,14 +50,6 @@ To run the grid search for Atari environments locally:
 python grid_search_cnn.py
 ```
 
-#### Cluster Execution with SLURM
-
-To run on a multi-GPU cluster using SLURM:
-
-```
-sbatch run_grid_search_slurm.py
-```
-
 ### Classic Control Environments
 
 To run the grid search for classic control environments:
